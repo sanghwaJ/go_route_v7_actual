@@ -180,10 +180,10 @@ final router = GoRouter(
       ],
     ),
   ],
-  // go route 에러 처리
+  // go route error 처리
   errorBuilder: (context, state) => ErrorScreen(
     error: state.error.toString(),
   ),
-  // go route 로깅
+  // go route Logging
   debugLogDiagnostics: true,
 );
