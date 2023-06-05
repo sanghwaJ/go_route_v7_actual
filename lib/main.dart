@@ -12,7 +12,7 @@ class _App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // router 사용
+    // router 사용 (v4와 다름 주의!!!)
     return MaterialApp.router(
       routerConfig: router,
     );
