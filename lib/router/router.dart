@@ -20,9 +20,7 @@ bool authState = false;
 
 final router = GoRouter(
   // state = GoRouterState
-  /**
-   * 맨 위에 적용한 redirect는 전체 route에 적용됨
-   */
+  // 맨 위에 적용한 redirect는 전체 route에 적용됨
   redirect: (context, state) {
     if (state.location == '/login/private' && !authState) {
       // return String(path) => 해당 route로 이동
@@ -81,7 +79,7 @@ final router = GoRouter(
             GoRoute(
               path: ':name', // '/path_param/{id}/{name}'
               builder: (context, state) {
-                // path가 다른데 같은 Screen을 반환할 수 있음
+                // path가 달라도, 같은 Screen을 반환할 수 있음
                 // 즉, 어떤 위젯을 리턴하는지는 중요하지 않으며, 독립적인 위젯으로 봄
                 // (사실 지금 예시와 같이 실무에선 잘 쓰진 않음)
                 return PathParamScreen();

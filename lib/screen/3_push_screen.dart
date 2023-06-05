@@ -13,7 +13,7 @@ class PushScreen extends StatelessWidget {
           ElevatedButton(
             /**
              * push 함수
-             * Routes를 '/' 하위에 'first', 'second', 'third'가 있다고 가정하면,
+             * Routes '/' 하위에 'first', 'second', 'third'가 있다고 가정하면,
              * first로 이동하면 router에 정의된 순서를 무시하고 'first'만 추가됨
              */
             onPressed: () {
@@ -24,7 +24,7 @@ class PushScreen extends StatelessWidget {
           ElevatedButton(
             /**
              * Go 함수
-             * Routes를 '/' 하위에 'first', 'second', 'third'가 있다고 가정하면,
+             * Routes '/' 하위에 'first', 'second', 'third'가 있다고 가정하면,
              * first로 이동하면 '/'와 'first'가 추가됨
              * 즉, 화면이 router에 정의된 순서로만 중첩됨
              */
